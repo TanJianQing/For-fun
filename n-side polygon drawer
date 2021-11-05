@@ -1,0 +1,31 @@
+# Import necessary modules
+import turtle
+
+# Creates a pen that draws the shape
+t = turtle.Turtle()
+
+number_of_sides = 10
+length_of_sides = 100
+
+# Resets pen's position
+t.home()
+
+# Sets the line colour, fill colour
+t.color('red', 'green')
+
+# Adjust thickness of pen
+t.pensize(5)
+
+# Fills the shape with a colour
+t.begin_fill()
+
+# Draws the shape
+for i in range(number_of_sides):
+  t.forward(length_of_sides)
+  t.right(360/number_of_sides)
+
+# Ends the filling of colour
+t.end_fill()
+
+# Ends turtle process
+turtle.done()
